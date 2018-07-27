@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="header d-flex justify-content-between">
+        <div class="logo d-flex align-items-center">
+            <a href="index.html">
+                <i class="fas fa-user-md"></i>
+            </a>
+        </div>
+        <div class="menu d-flex align-items-center">
+            <nav class="nav">
+                <a *ngFor="let menuItems of menuItem"
+                    class="nav-link">
+                    {{menuItems.item}}
+                </a>
+            </nav>
+        </div>
+    </div>
+</div>
