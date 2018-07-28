@@ -1,16 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PreHeaderComponent } from './components/pre-header/pre-header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
     imports: [
         CommonModule
     ],
     declarations: [
-        PreHeaderComponent
+        PreHeaderComponent,
+        FooterComponent
     ],
     exports: [
-        PreHeaderComponent
+        PreHeaderComponent,
+        FooterComponent
     ]
     })
 export class CoreModule { }
