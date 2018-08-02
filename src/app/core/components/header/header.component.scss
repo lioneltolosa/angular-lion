@@ -1,0 +1,6 @@
+div {
+    & > div {
+        background-color: #daf0ee;
+        height: 10em;
+    }
+}
