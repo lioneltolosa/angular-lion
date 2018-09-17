@@ -21,7 +21,8 @@ import { SliderComponent } from './components/slider/slider.component';
     exports: [
         PreHeaderComponent,
         FooterComponent,
-        HeaderComponent
+        HeaderComponent,
+        SliderComponent
     ]
     })
 export class CoreModule { }
