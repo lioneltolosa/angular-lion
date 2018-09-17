@@ -5,6 +5,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PreHeaderComponent } from './components/pre-header/pre-header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 @NgModule({
     imports: [
@@ -14,7 +15,8 @@ import { HeaderComponent } from './components/header/header.component';
     declarations: [
         PreHeaderComponent,
         FooterComponent,
-        HeaderComponent
+        HeaderComponent,
+        SliderComponent
     ],
     exports: [
         PreHeaderComponent,

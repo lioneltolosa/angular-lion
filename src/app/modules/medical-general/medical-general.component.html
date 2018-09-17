@@ -1,65 +1,150 @@
 <div class="container">
-        <ngb-tabset>
-            <ngb-tab title="Personal Information">
-                <ng-template ngbTabContent>
-                    <p>Raw denim you probably haven't heard of them jean shorts Austin</p>
-                </ng-template>
-            </ngb-tab>
-            <ngb-tab title="Career">
-                <ng-template ngbTabContent>
-                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
-                        master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
-                        keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
-                        salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-                </ng-template>
-            </ngb-tab>
-            <ngb-tab title="Skills">
-                <ng-template ngbTabContent>
-                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
-                        master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
-                        keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
-                        salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-                </ng-template>
-            </ngb-tab>
-            <ngb-tab title="Simple">
-                <ng-template ngbTabContent>
-                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
-                        master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
-                        keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
-                        salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-                </ng-template>
-            </ngb-tab>
-            <ngb-tab title="Simple">
-                <ng-template ngbTabContent>
-                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
-                        master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
-                        keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
-                        salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-                </ng-template>
-            </ngb-tab>
-            <ngb-tab title="Simple">
-                <ng-template ngbTabContent>
-                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
-                        master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
-                        keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
-                        salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-                </ng-template>
-            </ngb-tab>
-            <ngb-tab title="Simple">
-                <ng-template ngbTabContent>
-                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
-                        master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
-                        keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
-                        salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-                </ng-template>
-            </ngb-tab>
-            <ngb-tab title="Simple">
-                <ng-template ngbTabContent>
-                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
-                        master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
-                        keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
-                        salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-                </ng-template>
-            </ngb-tab>
-        </ngb-tabset>
-    </div>
+    <ngb-tabset>
+        <ngb-tab title="Personal Information"
+                    [@sliderAnimation]="">
+            <ng-template ngbTabContent>
+                <!-- <fieldset class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="form-group">
+                                <label>
+                                    Pais
+                                </label>
+                                <input type="text" class="form-control">
+                                <span class="invalid-feedback">Aquest camp és requerit</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="form-group">
+                                <label>
+                                    Caducitat
+                                </label>
+                                <input type="text" class="form-control">
+                                <span class="invalid-feedback">Aquest camp és requerit</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="form-group">
+                                <label>
+                                    Caducitat
+                                </label>
+                                <input type="text" class="form-control">
+                                <span class="invalid-feedback">Aquest camp és requerit</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                    </div>
+                </fieldset> -->
+            <app-personal-information></app-personal-information>
+            </ng-template>
+        </ngb-tab>
+        <ngb-tab title="Career"
+                [@sliderAnimation]="">
+            <ng-template ngbTabContent>
+                <fieldset class="container">
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="form-group">
+                                <label>
+                                    Pais
+                                </label>
+                                <input type="text" class="form-control">
+                                <span class="invalid-feedback">Aquest camp és requerit</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="form-group">
+                                <label>
+                                    Caducitat
+                                </label>
+                                <input type="text" class="form-control">
+                                <span class="invalid-feedback">Aquest camp és requerit</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="form-group">
+                                <label>
+                                    Caducitat
+                                </label>
+                                <input type="text" class="form-control">
+                                <span class="invalid-feedback">Aquest camp és requerit</span>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </ng-template>
+        </ngb-tab>
+        <ngb-tab title="Skills"
+                [@sliderAnimation]="">
+            <ng-template ngbTabContent>
+                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
+                    master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
+                    keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
+                    salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+            </ng-template>
+        </ngb-tab>
+        <ngb-tab title="Simple">
+            <ng-template ngbTabContent>
+                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
+                    master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
+                    keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
+                    salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+            </ng-template>
+        </ngb-tab>
+        <ngb-tab title="Simple">
+            <ng-template ngbTabContent>
+                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
+                    master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
+                    keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
+                    salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+            </ng-template>
+        </ngb-tab>
+        <ngb-tab title="Simple">
+            <ng-template ngbTabContent>
+                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
+                    master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
+                    keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
+                    salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+            </ng-template>
+        </ngb-tab>
+        <ngb-tab title="Simple">
+            <ng-template ngbTabContent>
+                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
+                    master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
+                    keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
+                    salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+            </ng-template>
+        </ngb-tab>
+        <ngb-tab title="Simple">
+            <ng-template ngbTabContent>
+                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
+                    master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
+                    keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
+                    salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+            </ng-template>
+        </ngb-tab>
+    </ngb-tabset>
+</div>
