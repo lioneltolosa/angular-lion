@@ -1,0 +1,11 @@
+.content-persons {
+    padding-top: 2em;
+
+    .form-group {
+        .col-form-label {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}
