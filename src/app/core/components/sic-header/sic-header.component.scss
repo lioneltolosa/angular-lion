@@ -1,0 +1,70 @@
+@import '~styles/01_settings/variables';
+@import '~styles/01_settings/mixins';
+@import '~styles/02_generic/index';
+
+$header-bg: $gray-100;
+
+.header {
+    background-color: $header-bg;
+    padding-top: 2em;
+
+    & div > img {
+        cursor: pointer;
+        outline: 0;
+    }
+
+    & div > i {
+        color: $black;
+        font-size: 3em;
+    }
+
+    & .row > div {
+        margin-bottom: .5em;
+
+        @include media-breakpoint-up(xs) {
+            text-align: center;
+        }
+
+        @include media-breakpoint-up(lg) {
+            text-align: left;
+        }
+    }
+
+    & .row > div + div {
+        display: inline-flex;
+
+        @include media-breakpoint-up(xs) {
+            justify-content: center;
+        }
+
+        @include media-breakpoint-up(lg) {
+            justify-content: flex-end;
+        }
+
+        & > div {
+            padding-left: 0.6em;
+
+            & .btn {
+                width: 1em;
+                font-size: 1.2em;
+                padding: 0.1em;
+
+                & .icon-cog-2::before {
+                    color: $white;
+                    display: flex;
+                    margin-left: 0;
+                    font-size: 1.2em;
+                }
+            }
+
+            .dropdown-admin {
+                padding-left: 1.1em;
+                padding-top: 1em;
+                width: 372px;
+                border-radius: 0;
+                max-height: 444px;
+                overflow: auto;
+            }
+        }
+    }
+}
