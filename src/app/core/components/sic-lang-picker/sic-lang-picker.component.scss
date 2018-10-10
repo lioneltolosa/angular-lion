@@ -1,0 +1,19 @@
+@import '~styles/01_settings/variables';
+
+.elipse-1 {
+    background-color: $white;
+    border-radius: 3.125rem;
+    color: $black;
+    cursor: pointer;
+    height: 1.688em;
+    margin: 0;
+    margin-top: .313rem;
+    text-align: center;
+    width: 1.688em;
+
+    p {
+        font-size: .875em;
+        margin: 0;
+        padding-top: .125em;
+    }
+}
