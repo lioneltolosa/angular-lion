@@ -1,0 +1,73 @@
+@import '~styles/01_settings/variables';
+@import '~styles/01_settings/mixins';
+@import '~bootstrap/scss/utilities';
+@import '~styles/02_generic/index';
+
+.pre-header {
+    background: $black;
+    color: $white;
+    height: auto;
+    padding-bottom: .5em;
+    padding-top: .5em;
+
+    .logo {
+        @extend .pr-0;
+
+        display: flex;
+        justify-content: flex-start;
+
+        .fa-atom {
+            font-size: 2.5em;
+        }
+    }
+
+    .title {
+        @extend .py-0;
+
+        order: 2;
+
+        p {
+            @extend .mb-0;
+            @extend .mt-3;
+        }
+
+        @include media-breakpoint-up(xs) {
+            text-align: center;
+        }
+
+        @include media-breakpoint-up(md) {
+            text-align: center;
+        }
+
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            justify-content: flex-start;
+            order: 2;
+        }
+
+        @include media-breakpoint-up(xl) {
+            display: flex;
+            justify-content: flex-start;
+            order: 2;
+        }
+    }
+
+    .language {
+        @include make-col(6);
+
+        display: flex;
+        justify-content: flex-end;
+        order: 1;
+
+        @include media-breakpoint-up(lg) {
+            @include make-col(1);
+
+            order: 3;
+        }
+
+        sic-lang-picker {
+            padding-top: .3em;
+        }
+
+    }
+}
