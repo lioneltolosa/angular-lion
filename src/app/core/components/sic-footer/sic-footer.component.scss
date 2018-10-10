@@ -1,0 +1,92 @@
+@import '~styles/01_settings/index';
+@import '~bootstrap/scss/utilities/spacing';
+
+$color-p: rgba(135, 135, 135, .7);
+
+footer {
+    background-color: $gray-100;
+    height: auto;
+    text-align: center;
+
+    .footer-menu {
+        @extend .px-0;
+    }
+
+    .footer-menu li + li::before {
+        color: $gray-300;
+        content: '|';
+        display: inline-block;
+        margin: .5em;
+    }
+
+    ul {
+        padding-top: 1.3em;
+
+        li {
+            display: inline-block;
+
+            a {
+                @extend .my-3;
+
+                color: $gray-600;
+            }
+        }
+    }
+
+    hr {
+        margin-top: 1.5em;
+        opacity: .5;
+    }
+
+    hr + ul {
+        @extend .px-0;
+
+        padding-bottom: 2em;
+
+        li {
+            @extend .my-2;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: inline-block;
+            min-height: 2em;
+            min-width: 49%;
+
+            @include media-breakpoint-up(lg) {
+                min-width: 20%;
+            }
+        }
+
+        li a {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: inline-block;
+            height: 2.13em;
+            text-align: center;
+            width: 100%;
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+
+            @include media-breakpoint-up(md) {
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 2.2em;
+            }
+        }
+
+        li i {
+            font-size: 2.5em;
+        }
+    }
+
+    p {
+        color: $color-p;
+        font-size: 12px;
+        opacity: .7;
+        padding-bottom: 2em;
+        padding-top: 2em;
+    }
+}
