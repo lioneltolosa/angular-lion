@@ -1,0 +1,112 @@
+@import '~styles/01_settings/variables';
+@import '~styles/01_settings/mixins';
+@import '~styles/02_generic/index';
+
+$blue-nav-menu: #2E2E3A;
+
+.row > div {
+    .nav-tabs {
+        @include media-breakpoint-up(xs) {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .nav-item {
+            .nav-link {
+                color: $black;
+                cursor: pointer;
+                margin: 0 1.8em 0 0;
+                padding: 0;
+                padding-bottom: 1.2em;
+
+                @include media-breakpoint-up(xs) {
+                    font-size: 1em;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    font-size: .938em;
+                }
+
+                &:hover {
+                    color: $green;
+                }
+
+                &.active {
+                    border-bottom: .3em solid $green;
+                    color: $green;
+                    padding-bottom: .9em;
+                }
+            }
+        }
+    }
+}
+
+.row > div + div {
+    & > div + div {
+        border: 1px solid $gray-600;
+        border-left: 0;
+        height: 2.313em;
+        margin-top: .313em;
+        width: 1em;
+
+        & .btn {
+            font-size: 1em;
+            height: 1.25em;
+            margin-left: .6em;
+            margin-top: .3em;
+            padding: 0;
+            width: 1.375em;
+
+            .icon-star-1::before {
+                color: $gray-100;
+                font-size: 1em;
+                margin: 0;
+            }
+        }
+
+        & > div {
+            border-radius: 0;
+            height: auto;
+            left: -23.55em !important;
+            margin: 0;
+            padding: 0;
+            top: 2.7em !important;
+            width: 26.9em;
+
+            & > div {
+                display: flex;
+                flex-direction: row-reverse;
+                font-weight: 600;
+                padding-bottom: 1em;
+                padding-top: 1em;
+                padding-right: 1.1em;
+                justify-content: space-between;
+            }
+
+            .icon-star::before {
+                color: $black;
+                font-size: 1em;
+                margin-top: .2em;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(xs) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.nav-menu {
+    background-color: $blue-nav-menu;
+    opacity: .93;
+    padding: 1.6em 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
