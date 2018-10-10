@@ -1,0 +1,20 @@
+<ul class="nav-menu-tabs flex-column">
+    <li class="nav-item"
+        *ngFor="let option of options">
+        <a class="nav-link"
+            [ngClass]="{
+                'icon-down-dir': option.children,
+                'is-open': option.isOpen
+            }"
+            (click)="onOptionClick(option)">
+            {{option.description | translate}}
+        </a>
+        <div *ngIf="option.isOpen">
+            <!-- <sic-nav-menu *ngIf="option.children"
+                            [first]="false"
+                            [options]="option.children"
+                            (optionSelected)="onOptionClick($event)">
+            </sic-nav-menu> -->
+        </div>
+    </li>
+</ul>
