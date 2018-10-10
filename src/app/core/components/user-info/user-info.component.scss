@@ -1,0 +1,51 @@
+@import '~styles/01_settings/variables';
+@import '~styles/01_settings/mixins';
+@import '~styles/02_generic/index';
+
+@mixin icon {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    &::before {
+        padding-top: .2em;
+    }
+}
+
+div {
+    & > div {
+        color: $black;
+        cursor: pointer;
+
+        p {
+            span {
+                font-size: 1.1em;
+            }
+
+            span + span {
+                font-size: .8em;
+            }
+        }
+    }
+
+    & > div + div {
+        border-radius: 0;
+        margin-top: .3em;
+        padding: .9em 0;
+        width: 19.2em;
+
+        .dropdown-item {
+            border-bottom: 0;
+            padding-left: 1.9em;
+            padding-top: .5em;
+        }
+
+        .fa-info-circle {
+            @include icon;
+        }
+
+        .fa-sign-in-alt {
+            @include icon;
+        }
+    }
+}
