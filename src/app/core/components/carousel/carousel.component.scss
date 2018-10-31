@@ -1,0 +1,11 @@
+$grey: #CACACA;
+
+.container {
+    .col {
+        color: $grey;
+        display: inline-block;
+        padding: 40px 0;
+        text-align: center;
+        width: 33%;
+    }
+}
