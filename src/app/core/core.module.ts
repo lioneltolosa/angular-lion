@@ -7,6 +7,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { TableComponent } from './components/table/table.component';
+
 import { SicPreHeaderComponent } from './components/sic-pre-header/sic-pre-header.component';
 import { SicLangPickerComponent } from './components/sic-lang-picker/sic-lang-picker.component';
 import { SicFooterComponent } from './components/sic-footer/sic-footer.component';
@@ -15,6 +16,7 @@ import { UserInfoComponent } from './components/user-info/user-info.component';
 import { SicNavBarComponent } from './components/sic-nav-bar/sic-nav-bar.component';
 
 import { SharedModule } from '../shared/shared.module';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
     imports: [
@@ -34,6 +36,7 @@ import { SharedModule } from '../shared/shared.module';
         SicHeaderComponent,
         UserInfoComponent,
         SicNavBarComponent,
+        CarouselComponent,
     ],
     exports: [
         PreHeaderComponent,
@@ -45,6 +48,9 @@ import { SharedModule } from '../shared/shared.module';
         SicLangPickerComponent,
         SicFooterComponent,
         SicHeaderComponent,
+        UserInfoComponent,
+        SicNavBarComponent,
+        CarouselComponent,
     ]
     })
 export class CoreModule { }

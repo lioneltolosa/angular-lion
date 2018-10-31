@@ -7,3 +7,4 @@ export { SicPreHeaderComponent } from './sic-pre-header/sic-pre-header.component
 export { SicLangPickerComponent } from './sic-lang-picker/sic-lang-picker.component';
 export { SicFooterComponent } from './sic-footer/sic-footer.component';
 export { SicHeaderComponent } from './sic-header/sic-header.component';
+export { CarouselComponent } from './carousel/carousel.component';
